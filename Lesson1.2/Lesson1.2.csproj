@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78185543-E380-4F26-8925-DF339A3F0EA9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Lesson1._2</RootNamespace>
+    <AssemblyName>Lesson1.2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity1.Designer.cs">
+      <DependentUpon>Activity1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity2.Designer.cs">
+      <DependentUpon>Activity2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity2_PrintFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity2_PrintFrm.Designer.cs">
+      <DependentUpon>Activity2_PrintFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity3.Designer.cs">
+      <DependentUpon>Activity3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity3_PrintFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity3_PrintFrm.Designer.cs">
+      <DependentUpon>Activity3_PrintFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity4.Designer.cs">
+      <DependentUpon>Activity4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity4_PrintFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity4_PrintFrm.Designer.cs">
+      <DependentUpon>Activity4_PrintFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson3_Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson3_Activity.Designer.cs">
+      <DependentUpon>Lesson3_Activity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson3_ActivityPrintFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson3_ActivityPrintFrm.Designer.cs">
+      <DependentUpon>Lesson3_ActivityPrintFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRELIMEXAM_Lesson5Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRELIMEXAM_Lesson5Activity.Designer.cs">
+      <DependentUpon>PRELIMEXAM_Lesson5Activity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Activity1.resx">
+      <DependentUpon>Activity1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity2.resx">
+      <DependentUpon>Activity2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity2_PrintFrm.resx">
+      <DependentUpon>Activity2_PrintFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity3.resx">
+      <DependentUpon>Activity3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity3_PrintFrm.resx">
+      <DependentUpon>Activity3_PrintFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity4.resx">
+      <DependentUpon>Activity4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity4_PrintFrm.resx">
+      <DependentUpon>Activity4_PrintFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson3_Activity.resx">
+      <DependentUpon>Lesson3_Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson3_ActivityPrintFrm.resx">
+      <DependentUpon>Lesson3_ActivityPrintFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRELIMEXAM_Lesson5Activity.resx">
+      <DependentUpon>PRELIMEXAM_Lesson5Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Breakfast Meal A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Breakfast Meal A2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Breakfast Meal B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Breakfast Meal B2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicken Meal 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicken Meal A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicken Spag Meal A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double Palaboc Meal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double Value Meal A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Family Combo Meal A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Family Combo Meal B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Friend Meal A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KFC Burger and Chicken meal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KFC chicken strips meal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KFC ChowFun meal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KFC Combo Meal A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KFC Family Meal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KFC SHAKE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lunch Value Meal 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lunch Value Meal B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pancake Value Meal A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pasta Meal 101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twin Fries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Amanos Pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Cauliflower Crust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Dominos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Hawaiian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 New York Style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pepperoni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza Barbeque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza Special A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza Special B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza Special C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task 4 Pizza Special D.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
