@@ -430,6 +430,65 @@ namespace Lesson1._2
                 pictureBox1.Image = Image.FromFile(openFile.FileName);
             }
         }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Get all the computed and user-input values from the form
+                string employeeCode = txtEmployeeNumber.Text;
+                string firstName = txtFirstname.Text;
+                string middleName = txtMiddleName.Text;
+                string surname = txtSurname.Text;
+                string department = txtDepartment.Text;
+                string payDate = txtPaydate.Text;
+
+                // Get hours/rates for earnings
+                double basicHours = double.Parse(txtBasicHours.Text);
+                double honorariumHours = double.Parse(txtHonorariumHours.Text);
+                double otherHours = double.Parse(txtOtherHours.Text);
+
+                // Get computed income and deduction values
+                double basicIncome = double.Parse(txtBasicIncomeCutoff.Text);
+                double honorariumIncome = double.Parse(txtHonorariumIncomeCutoff.Text);
+                double otherIncome = double.Parse(txtOtherIncomeCutoff.Text);
+                double grossIncome = double.Parse(txtGrossIncome.Text);
+
+                double sssContribution = double.Parse(txtSSSContribution.Text);
+                double philhealthContribution = double.Parse(txtPhilhealthContribution.Text);
+                double pagibigContribution = double.Parse(txtPagibigContribution.Text);
+                double incomeTaxContribution = double.Parse(txtIncomeTaxContribution.Text);
+
+                double sssLoan = double.Parse(txtSSSLoan.Text);
+                double pagibigLoan = double.Parse(txtPagibigLoan.Text);
+                double facultySavingsDeposit = double.Parse(txtFacultySavingsDeposit.Text);
+                double facultySavingsLoan = double.Parse(txtFacultySavingsLoan.Text);
+                double salaryLoan = double.Parse(txtSalaryLoan.Text);
+                double otherLoans = double.Parse(txtOtherLoans.Text);
+
+                double totalDeductions = double.Parse(txtTotalDeductions.Text);
+                double netIncome = double.Parse(txtNetIncome.Text);
+
+                // Create an instance of the payslip form and pass the data
+                PRELIMEXAM_Lesson5Activity_PrintFrm payslipForm = new PRELIMEXAM_Lesson5Activity_PrintFrm(
+                    employeeCode, firstName, middleName, surname, department, payDate,
+                    basicHours, basicIncome, honorariumHours, honorariumIncome, otherHours, otherIncome,
+                    sssContribution, philhealthContribution, pagibigContribution, incomeTaxContribution,
+                    sssLoan, pagibigLoan, facultySavingsDeposit, facultySavingsLoan,
+                    salaryLoan, otherLoans, totalDeductions, grossIncome, netIncome);
+
+                // Show the payslip form
+                payslipForm.Show();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please ensure all required fields are filled with valid numeric values before generating the payslip.", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An unexpected error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
 
