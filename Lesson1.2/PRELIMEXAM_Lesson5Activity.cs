@@ -334,9 +334,13 @@ namespace Lesson1._2
                     taxContribution = ((((grossIncome * 24) - 8000000) * 0.35) + 2410000) / 24;
                 }
 
+                // Pag-IBIG contribution is fixed at 100 pesos
+                double pagibigContribution = 100.00;
+
                 // Display the calculated contributions
                 txtPhilhealthContribution.Text = philhealthContribution.ToString("N2");
                 txtSSSContribution.Text = sssContribution.ToString("N2");
+                txtPagibigContribution.Text = pagibigContribution.ToString("N2"); // Display Pag-IBIG
                 txtIncomeTaxContribution.Text = taxContribution.ToString("N2");
             }
             catch (FormatException)
@@ -353,14 +357,11 @@ namespace Lesson1._2
         {
             try
             {
-                // Set the fixed Pag-IBIG contribution and display it
-                double pagibigContribution = 200.00;
-                txtPagibigContribution.Text = pagibigContribution.ToString("N2");
-
                 // 1. Read all Deduction Inputs from textboxes
                 double sssContribution = double.Parse(txtSSSContribution.Text);
                 double philhealthContribution = double.Parse(txtPhilhealthContribution.Text);
                 double incomeTaxContribution = double.Parse(txtIncomeTaxContribution.Text);
+                double pagibigContribution = double.Parse(txtPagibigContribution.Text); // Read Pag-IBIG from textbox
 
                 // Other Deductions
                 double sssLoan = double.Parse(txtSSSLoan.Text);
@@ -368,8 +369,6 @@ namespace Lesson1._2
                 double facultySavingsDeposit = double.Parse(txtFacultySavingsDeposit.Text);
                 double facultySavingsLoan = double.Parse(txtFacultySavingsLoan.Text);
                 double salaryLoan = double.Parse(txtSalaryLoan.Text);
-
-                // Read "Other Loans" directly from the textbox
                 double otherLoans = double.Parse(txtOtherLoans.Text);
 
                 // 2. Calculate Total Deductions
@@ -419,6 +418,17 @@ namespace Lesson1._2
             txtBasicIncomeCutoff.Enabled = false;
             txtHonorariumIncomeCutoff.Enabled = false;
             txtOtherIncomeCutoff.Enabled = false;
+        }
+
+        private void browseBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromFile(openFile.FileName);
+            }
         }
     }
 }

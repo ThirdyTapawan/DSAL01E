@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PRELIMEXAM_Lesson5Activity));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -107,6 +108,8 @@
             this.updateBtn = new System.Windows.Forms.Button();
             this.newBtn = new System.Windows.Forms.Button();
             this.txtNetIncome = new System.Windows.Forms.TextBox();
+            this.browseBtn = new System.Windows.Forms.Button();
+            this.label40 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,7 +137,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 284);
+            this.label3.Location = new System.Drawing.Point(37, 309);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 22);
             this.label3.TabIndex = 2;
@@ -142,23 +145,25 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Location = new System.Drawing.Point(41, 108);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(196, 283);
+            this.textBox1.Location = new System.Drawing.Point(211, 308);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(146, 22);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(196, 311);
+            this.textBox2.Location = new System.Drawing.Point(211, 336);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(146, 22);
             this.textBox2.TabIndex = 6;
@@ -167,7 +172,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 312);
+            this.label4.Location = new System.Drawing.Point(37, 337);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 22);
             this.label4.TabIndex = 5;
@@ -177,7 +182,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 350);
+            this.label5.Location = new System.Drawing.Point(27, 375);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 22);
             this.label5.TabIndex = 7;
@@ -185,7 +190,7 @@
             // 
             // txtBasicHours
             // 
-            this.txtBasicHours.Location = new System.Drawing.Point(196, 408);
+            this.txtBasicHours.Location = new System.Drawing.Point(211, 433);
             this.txtBasicHours.Name = "txtBasicHours";
             this.txtBasicHours.Size = new System.Drawing.Size(146, 22);
             this.txtBasicHours.TabIndex = 11;
@@ -194,7 +199,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(37, 409);
+            this.label6.Location = new System.Drawing.Point(37, 434);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 22);
             this.label6.TabIndex = 10;
@@ -202,7 +207,7 @@
             // 
             // txtBasicRate
             // 
-            this.txtBasicRate.Location = new System.Drawing.Point(196, 380);
+            this.txtBasicRate.Location = new System.Drawing.Point(211, 405);
             this.txtBasicRate.Name = "txtBasicRate";
             this.txtBasicRate.Size = new System.Drawing.Size(146, 22);
             this.txtBasicRate.TabIndex = 9;
@@ -211,7 +216,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(37, 381);
+            this.label7.Location = new System.Drawing.Point(37, 406);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 22);
             this.label7.TabIndex = 8;
@@ -220,7 +225,7 @@
             // txtBasicIncomeCutoff
             // 
             this.txtBasicIncomeCutoff.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtBasicIncomeCutoff.Location = new System.Drawing.Point(196, 436);
+            this.txtBasicIncomeCutoff.Location = new System.Drawing.Point(211, 461);
             this.txtBasicIncomeCutoff.Name = "txtBasicIncomeCutoff";
             this.txtBasicIncomeCutoff.Size = new System.Drawing.Size(146, 22);
             this.txtBasicIncomeCutoff.TabIndex = 13;
@@ -229,7 +234,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(37, 437);
+            this.label8.Location = new System.Drawing.Point(37, 462);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(92, 22);
             this.label8.TabIndex = 12;
@@ -238,7 +243,7 @@
             // txtHonorariumIncomeCutoff
             // 
             this.txtHonorariumIncomeCutoff.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtHonorariumIncomeCutoff.Location = new System.Drawing.Point(196, 558);
+            this.txtHonorariumIncomeCutoff.Location = new System.Drawing.Point(211, 583);
             this.txtHonorariumIncomeCutoff.Name = "txtHonorariumIncomeCutoff";
             this.txtHonorariumIncomeCutoff.Size = new System.Drawing.Size(146, 22);
             this.txtHonorariumIncomeCutoff.TabIndex = 20;
@@ -247,7 +252,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(37, 559);
+            this.label9.Location = new System.Drawing.Point(37, 584);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(92, 22);
             this.label9.TabIndex = 19;
@@ -255,7 +260,7 @@
             // 
             // txtHonorariumHours
             // 
-            this.txtHonorariumHours.Location = new System.Drawing.Point(196, 530);
+            this.txtHonorariumHours.Location = new System.Drawing.Point(211, 555);
             this.txtHonorariumHours.Name = "txtHonorariumHours";
             this.txtHonorariumHours.Size = new System.Drawing.Size(146, 22);
             this.txtHonorariumHours.TabIndex = 18;
@@ -264,7 +269,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(37, 531);
+            this.label10.Location = new System.Drawing.Point(37, 556);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(112, 22);
             this.label10.TabIndex = 17;
@@ -272,7 +277,7 @@
             // 
             // txtHonorariumRate
             // 
-            this.txtHonorariumRate.Location = new System.Drawing.Point(196, 502);
+            this.txtHonorariumRate.Location = new System.Drawing.Point(211, 527);
             this.txtHonorariumRate.Name = "txtHonorariumRate";
             this.txtHonorariumRate.Size = new System.Drawing.Size(146, 22);
             this.txtHonorariumRate.TabIndex = 16;
@@ -281,7 +286,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(37, 503);
+            this.label11.Location = new System.Drawing.Point(37, 528);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 22);
             this.label11.TabIndex = 15;
@@ -291,7 +296,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(27, 472);
+            this.label12.Location = new System.Drawing.Point(27, 497);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(133, 22);
             this.label12.TabIndex = 14;
@@ -300,7 +305,7 @@
             // txtOtherIncomeCutoff
             // 
             this.txtOtherIncomeCutoff.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtOtherIncomeCutoff.Location = new System.Drawing.Point(196, 678);
+            this.txtOtherIncomeCutoff.Location = new System.Drawing.Point(211, 703);
             this.txtOtherIncomeCutoff.Name = "txtOtherIncomeCutoff";
             this.txtOtherIncomeCutoff.Size = new System.Drawing.Size(146, 22);
             this.txtOtherIncomeCutoff.TabIndex = 27;
@@ -309,7 +314,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(37, 679);
+            this.label13.Location = new System.Drawing.Point(37, 704);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(92, 22);
             this.label13.TabIndex = 26;
@@ -317,7 +322,7 @@
             // 
             // txtOtherHours
             // 
-            this.txtOtherHours.Location = new System.Drawing.Point(196, 650);
+            this.txtOtherHours.Location = new System.Drawing.Point(211, 675);
             this.txtOtherHours.Name = "txtOtherHours";
             this.txtOtherHours.Size = new System.Drawing.Size(146, 22);
             this.txtOtherHours.TabIndex = 25;
@@ -326,7 +331,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(37, 651);
+            this.label14.Location = new System.Drawing.Point(37, 676);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(112, 22);
             this.label14.TabIndex = 24;
@@ -334,7 +339,7 @@
             // 
             // txtOtherRate
             // 
-            this.txtOtherRate.Location = new System.Drawing.Point(196, 622);
+            this.txtOtherRate.Location = new System.Drawing.Point(211, 647);
             this.txtOtherRate.Name = "txtOtherRate";
             this.txtOtherRate.Size = new System.Drawing.Size(146, 22);
             this.txtOtherRate.TabIndex = 23;
@@ -343,7 +348,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(37, 623);
+            this.label15.Location = new System.Drawing.Point(37, 648);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(69, 22);
             this.label15.TabIndex = 22;
@@ -353,7 +358,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(27, 592);
+            this.label16.Location = new System.Drawing.Point(27, 617);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(94, 22);
             this.label16.TabIndex = 21;
@@ -363,7 +368,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(37, 777);
+            this.label17.Location = new System.Drawing.Point(37, 802);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(71, 22);
             this.label17.TabIndex = 31;
@@ -371,8 +376,8 @@
             // 
             // txtGrossIncome
             // 
-            this.txtGrossIncome.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtGrossIncome.Location = new System.Drawing.Point(196, 748);
+            this.txtGrossIncome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtGrossIncome.Location = new System.Drawing.Point(211, 773);
             this.txtGrossIncome.Name = "txtGrossIncome";
             this.txtGrossIncome.Size = new System.Drawing.Size(146, 22);
             this.txtGrossIncome.TabIndex = 30;
@@ -381,7 +386,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(37, 749);
+            this.label18.Location = new System.Drawing.Point(37, 774);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(87, 22);
             this.label18.TabIndex = 29;
@@ -391,7 +396,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(27, 718);
+            this.label19.Location = new System.Drawing.Point(27, 743);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(112, 22);
             this.label19.TabIndex = 28;
@@ -399,7 +404,7 @@
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(576, 164);
+            this.textBox14.Location = new System.Drawing.Point(612, 164);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(146, 22);
             this.textBox14.TabIndex = 38;
@@ -408,7 +413,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(417, 165);
+            this.label20.Location = new System.Drawing.Point(438, 165);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(55, 22);
             this.label20.TabIndex = 37;
@@ -416,7 +421,7 @@
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(576, 136);
+            this.textBox15.Location = new System.Drawing.Point(612, 136);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(146, 22);
             this.textBox15.TabIndex = 36;
@@ -425,7 +430,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(417, 137);
+            this.label21.Location = new System.Drawing.Point(438, 137);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(75, 22);
             this.label21.TabIndex = 35;
@@ -433,7 +438,7 @@
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(576, 108);
+            this.textBox16.Location = new System.Drawing.Point(612, 108);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(146, 22);
             this.textBox16.TabIndex = 34;
@@ -442,7 +447,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(417, 109);
+            this.label22.Location = new System.Drawing.Point(438, 109);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(64, 22);
             this.label22.TabIndex = 33;
@@ -451,7 +456,7 @@
             // txtPagibigContribution
             // 
             this.txtPagibigContribution.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtPagibigContribution.Location = new System.Drawing.Point(576, 437);
+            this.txtPagibigContribution.Location = new System.Drawing.Point(612, 462);
             this.txtPagibigContribution.Name = "txtPagibigContribution";
             this.txtPagibigContribution.Size = new System.Drawing.Size(146, 22);
             this.txtPagibigContribution.TabIndex = 45;
@@ -460,7 +465,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(417, 438);
+            this.label23.Location = new System.Drawing.Point(438, 463);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(113, 22);
             this.label23.TabIndex = 44;
@@ -469,7 +474,7 @@
             // txtPhilhealthContribution
             // 
             this.txtPhilhealthContribution.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtPhilhealthContribution.Location = new System.Drawing.Point(576, 409);
+            this.txtPhilhealthContribution.Location = new System.Drawing.Point(612, 434);
             this.txtPhilhealthContribution.Name = "txtPhilhealthContribution";
             this.txtPhilhealthContribution.Size = new System.Drawing.Size(146, 22);
             this.txtPhilhealthContribution.TabIndex = 43;
@@ -478,7 +483,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(417, 410);
+            this.label24.Location = new System.Drawing.Point(438, 435);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(126, 22);
             this.label24.TabIndex = 42;
@@ -487,7 +492,7 @@
             // txtSSSContribution
             // 
             this.txtSSSContribution.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtSSSContribution.Location = new System.Drawing.Point(576, 381);
+            this.txtSSSContribution.Location = new System.Drawing.Point(612, 406);
             this.txtSSSContribution.Name = "txtSSSContribution";
             this.txtSSSContribution.Size = new System.Drawing.Size(146, 22);
             this.txtSSSContribution.TabIndex = 41;
@@ -496,7 +501,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(417, 382);
+            this.label25.Location = new System.Drawing.Point(438, 407);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(95, 22);
             this.label25.TabIndex = 40;
@@ -506,7 +511,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(407, 351);
+            this.label26.Location = new System.Drawing.Point(428, 376);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(137, 22);
             this.label26.TabIndex = 39;
@@ -515,7 +520,7 @@
             // txtIncomeTaxContribution
             // 
             this.txtIncomeTaxContribution.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtIncomeTaxContribution.Location = new System.Drawing.Point(576, 465);
+            this.txtIncomeTaxContribution.Location = new System.Drawing.Point(612, 490);
             this.txtIncomeTaxContribution.Name = "txtIncomeTaxContribution";
             this.txtIncomeTaxContribution.Size = new System.Drawing.Size(146, 22);
             this.txtIncomeTaxContribution.TabIndex = 47;
@@ -524,7 +529,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(417, 466);
+            this.label27.Location = new System.Drawing.Point(438, 491);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(130, 22);
             this.label27.TabIndex = 46;
@@ -532,7 +537,7 @@
             // 
             // txtFacultySavingsLoan
             // 
-            this.txtFacultySavingsLoan.Location = new System.Drawing.Point(576, 615);
+            this.txtFacultySavingsLoan.Location = new System.Drawing.Point(612, 640);
             this.txtFacultySavingsLoan.Name = "txtFacultySavingsLoan";
             this.txtFacultySavingsLoan.Size = new System.Drawing.Size(146, 22);
             this.txtFacultySavingsLoan.TabIndex = 56;
@@ -541,7 +546,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(417, 616);
+            this.label28.Location = new System.Drawing.Point(438, 641);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(113, 22);
             this.label28.TabIndex = 55;
@@ -549,7 +554,7 @@
             // 
             // txtFacultySavingsDeposit
             // 
-            this.txtFacultySavingsDeposit.Location = new System.Drawing.Point(576, 587);
+            this.txtFacultySavingsDeposit.Location = new System.Drawing.Point(612, 612);
             this.txtFacultySavingsDeposit.Name = "txtFacultySavingsDeposit";
             this.txtFacultySavingsDeposit.Size = new System.Drawing.Size(146, 22);
             this.txtFacultySavingsDeposit.TabIndex = 54;
@@ -558,7 +563,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(417, 588);
+            this.label29.Location = new System.Drawing.Point(438, 613);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(126, 22);
             this.label29.TabIndex = 53;
@@ -566,7 +571,7 @@
             // 
             // txtPagibigLoan
             // 
-            this.txtPagibigLoan.Location = new System.Drawing.Point(576, 559);
+            this.txtPagibigLoan.Location = new System.Drawing.Point(612, 584);
             this.txtPagibigLoan.Name = "txtPagibigLoan";
             this.txtPagibigLoan.Size = new System.Drawing.Size(146, 22);
             this.txtPagibigLoan.TabIndex = 52;
@@ -575,7 +580,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(417, 560);
+            this.label30.Location = new System.Drawing.Point(438, 585);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(75, 22);
             this.label30.TabIndex = 51;
@@ -583,7 +588,7 @@
             // 
             // txtSSSLoan
             // 
-            this.txtSSSLoan.Location = new System.Drawing.Point(576, 531);
+            this.txtSSSLoan.Location = new System.Drawing.Point(612, 556);
             this.txtSSSLoan.Name = "txtSSSLoan";
             this.txtSSSLoan.Size = new System.Drawing.Size(146, 22);
             this.txtSSSLoan.TabIndex = 50;
@@ -592,7 +597,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(417, 532);
+            this.label31.Location = new System.Drawing.Point(438, 557);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(57, 22);
             this.label31.TabIndex = 49;
@@ -602,7 +607,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(407, 501);
+            this.label32.Location = new System.Drawing.Point(428, 526);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(122, 22);
             this.label32.TabIndex = 48;
@@ -610,7 +615,7 @@
             // 
             // txtSalaryLoan
             // 
-            this.txtSalaryLoan.Location = new System.Drawing.Point(576, 643);
+            this.txtSalaryLoan.Location = new System.Drawing.Point(612, 668);
             this.txtSalaryLoan.Name = "txtSalaryLoan";
             this.txtSalaryLoan.Size = new System.Drawing.Size(146, 22);
             this.txtSalaryLoan.TabIndex = 58;
@@ -619,7 +624,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(417, 644);
+            this.label33.Location = new System.Drawing.Point(438, 669);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(69, 22);
             this.label33.TabIndex = 57;
@@ -627,7 +632,7 @@
             // 
             // txtOtherLoans
             // 
-            this.txtOtherLoans.Location = new System.Drawing.Point(576, 671);
+            this.txtOtherLoans.Location = new System.Drawing.Point(612, 696);
             this.txtOtherLoans.Name = "txtOtherLoans";
             this.txtOtherLoans.Size = new System.Drawing.Size(146, 22);
             this.txtOtherLoans.TabIndex = 60;
@@ -636,7 +641,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(417, 672);
+            this.label34.Location = new System.Drawing.Point(438, 697);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(70, 22);
             this.label34.TabIndex = 59;
@@ -644,8 +649,8 @@
             // 
             // txtTotalDeductions
             // 
-            this.txtTotalDeductions.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtTotalDeductions.Location = new System.Drawing.Point(576, 738);
+            this.txtTotalDeductions.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtTotalDeductions.Location = new System.Drawing.Point(612, 763);
             this.txtTotalDeductions.Name = "txtTotalDeductions";
             this.txtTotalDeductions.Size = new System.Drawing.Size(146, 22);
             this.txtTotalDeductions.TabIndex = 63;
@@ -654,7 +659,7 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(417, 739);
+            this.label35.Location = new System.Drawing.Point(438, 764);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(93, 22);
             this.label35.TabIndex = 62;
@@ -664,7 +669,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(407, 708);
+            this.label36.Location = new System.Drawing.Point(428, 733);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(122, 22);
             this.label36.TabIndex = 61;
@@ -672,7 +677,7 @@
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(576, 248);
+            this.textBox28.Location = new System.Drawing.Point(612, 248);
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(146, 22);
             this.textBox28.TabIndex = 69;
@@ -681,7 +686,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(417, 249);
+            this.label37.Location = new System.Drawing.Point(438, 249);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(51, 22);
             this.label37.TabIndex = 68;
@@ -689,7 +694,7 @@
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(576, 220);
+            this.textBox29.Location = new System.Drawing.Point(612, 220);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(146, 22);
             this.textBox29.TabIndex = 67;
@@ -698,7 +703,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(417, 221);
+            this.label38.Location = new System.Drawing.Point(438, 221);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(142, 22);
             this.label38.TabIndex = 66;
@@ -706,7 +711,7 @@
             // 
             // textBox30
             // 
-            this.textBox30.Location = new System.Drawing.Point(576, 192);
+            this.textBox30.Location = new System.Drawing.Point(612, 192);
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(146, 22);
             this.textBox30.TabIndex = 65;
@@ -715,7 +720,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(417, 193);
+            this.label39.Location = new System.Drawing.Point(438, 193);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(68, 22);
             this.label39.TabIndex = 64;
@@ -723,7 +728,7 @@
             // 
             // textBox32
             // 
-            this.textBox32.Location = new System.Drawing.Point(576, 304);
+            this.textBox32.Location = new System.Drawing.Point(612, 304);
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(146, 22);
             this.textBox32.TabIndex = 73;
@@ -732,7 +737,7 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(417, 305);
+            this.label41.Location = new System.Drawing.Point(438, 305);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(70, 22);
             this.label41.TabIndex = 72;
@@ -740,7 +745,7 @@
             // 
             // textBox33
             // 
-            this.textBox33.Location = new System.Drawing.Point(576, 276);
+            this.textBox33.Location = new System.Drawing.Point(612, 276);
             this.textBox33.Name = "textBox33";
             this.textBox33.Size = new System.Drawing.Size(146, 22);
             this.textBox33.TabIndex = 71;
@@ -749,7 +754,7 @@
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(417, 277);
+            this.label42.Location = new System.Drawing.Point(438, 277);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(91, 22);
             this.label42.TabIndex = 70;
@@ -757,70 +762,99 @@
             // 
             // grossincomeBtn
             // 
+            this.grossincomeBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.grossincomeBtn.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grossincomeBtn.Location = new System.Drawing.Point(410, 776);
+            this.grossincomeBtn.Location = new System.Drawing.Point(431, 803);
             this.grossincomeBtn.Name = "grossincomeBtn";
-            this.grossincomeBtn.Size = new System.Drawing.Size(98, 32);
+            this.grossincomeBtn.Size = new System.Drawing.Size(98, 30);
             this.grossincomeBtn.TabIndex = 74;
             this.grossincomeBtn.Text = "GROSS INCOME";
-            this.grossincomeBtn.UseVisualStyleBackColor = true;
+            this.grossincomeBtn.UseVisualStyleBackColor = false;
             this.grossincomeBtn.Click += new System.EventHandler(this.grossincomeBtn_Click);
             // 
             // netincomeBtn
             // 
+            this.netincomeBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.netincomeBtn.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.netincomeBtn.Location = new System.Drawing.Point(508, 778);
+            this.netincomeBtn.Location = new System.Drawing.Point(529, 803);
             this.netincomeBtn.Name = "netincomeBtn";
             this.netincomeBtn.Size = new System.Drawing.Size(98, 30);
             this.netincomeBtn.TabIndex = 75;
             this.netincomeBtn.Text = "NET INCOME";
-            this.netincomeBtn.UseVisualStyleBackColor = true;
+            this.netincomeBtn.UseVisualStyleBackColor = false;
             this.netincomeBtn.Click += new System.EventHandler(this.netincomeBtn_Click);
             // 
             // saveBtn
             // 
+            this.saveBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.saveBtn.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveBtn.Location = new System.Drawing.Point(605, 778);
+            this.saveBtn.Location = new System.Drawing.Point(626, 803);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(59, 30);
             this.saveBtn.TabIndex = 76;
             this.saveBtn.Text = "SAVE";
-            this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.UseVisualStyleBackColor = false;
             // 
             // updateBtn
             // 
+            this.updateBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.updateBtn.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateBtn.Location = new System.Drawing.Point(663, 778);
+            this.updateBtn.Location = new System.Drawing.Point(684, 803);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(67, 30);
             this.updateBtn.TabIndex = 77;
             this.updateBtn.Text = "UPDATE";
-            this.updateBtn.UseVisualStyleBackColor = true;
+            this.updateBtn.UseVisualStyleBackColor = false;
             // 
             // newBtn
             // 
+            this.newBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.newBtn.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newBtn.Location = new System.Drawing.Point(729, 778);
+            this.newBtn.Location = new System.Drawing.Point(750, 803);
             this.newBtn.Name = "newBtn";
             this.newBtn.Size = new System.Drawing.Size(59, 30);
             this.newBtn.TabIndex = 78;
             this.newBtn.Text = "NEW";
-            this.newBtn.UseVisualStyleBackColor = true;
+            this.newBtn.UseVisualStyleBackColor = false;
             this.newBtn.Click += new System.EventHandler(this.newBtn_Click);
             // 
             // txtNetIncome
             // 
-            this.txtNetIncome.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.txtNetIncome.Location = new System.Drawing.Point(196, 776);
+            this.txtNetIncome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtNetIncome.Location = new System.Drawing.Point(211, 801);
             this.txtNetIncome.Name = "txtNetIncome";
             this.txtNetIncome.Size = new System.Drawing.Size(146, 22);
             this.txtNetIncome.TabIndex = 32;
+            // 
+            // browseBtn
+            // 
+            this.browseBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.browseBtn.Font = new System.Drawing.Font("Oswald", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.browseBtn.Location = new System.Drawing.Point(68, 264);
+            this.browseBtn.Name = "browseBtn";
+            this.browseBtn.Size = new System.Drawing.Size(98, 32);
+            this.browseBtn.TabIndex = 79;
+            this.browseBtn.Text = "BROWSE";
+            this.browseBtn.UseVisualStyleBackColor = false;
+            this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(193, 111);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(222, 144);
+            this.label40.TabIndex = 80;
+            this.label40.Text = resources.GetString("label40.Text");
             // 
             // PRELIMEXAM_Lesson5Activity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 833);
+            this.ClientSize = new System.Drawing.Size(875, 841);
+            this.Controls.Add(this.label40);
+            this.Controls.Add(this.browseBtn);
             this.Controls.Add(this.newBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.saveBtn);
@@ -990,5 +1024,7 @@
         private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.Button newBtn;
         private System.Windows.Forms.TextBox txtNetIncome;
+        private System.Windows.Forms.Button browseBtn;
+        private System.Windows.Forms.Label label40;
     }
 }
