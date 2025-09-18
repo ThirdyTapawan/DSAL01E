@@ -41,12 +41,12 @@ namespace Lesson1._2
 
             // Populate Earnings section
             // Day/Hrs
-            txtBasicPayDayHrs.Text = basicHours.ToString("N2");
-            txtOvertimeDayHrs.Text = otherHours.ToString("N2");
-            txtHonorariumDayHrs.Text = honorariumHours.ToString("N2");
-            txtHonorariumAdjDayHrs.Text = "0.00";
-            txtSubstitutionDayHrs.Text = "0.00";
-            txtTardyDayHrs.Text = "0.00";
+            txtBasicPayDayHrs.Text = basicHours.ToString();
+            txtOvertimeDayHrs.Text = otherHours.ToString();
+            txtHonorariumDayHrs.Text = honorariumHours.ToString();
+            txtHonorariumAdjDayHrs.Text = "0";
+            txtSubstitutionDayHrs.Text = "0";
+            txtTardyDayHrs.Text = "0";
 
             // Non-Taxable (Actual Earnings)
             txtBasicPayNonTaxable.Text = basicIncome.ToString("N2");

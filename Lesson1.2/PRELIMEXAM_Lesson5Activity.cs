@@ -444,9 +444,9 @@ namespace Lesson1._2
                 string payDate = txtPaydate.Text;
 
                 // Get hours/rates for earnings
-                double basicHours = double.Parse(txtBasicHours.Text);
-                double honorariumHours = double.Parse(txtHonorariumHours.Text);
-                double otherHours = double.Parse(txtOtherHours.Text);
+                int basicHours = int.Parse(txtBasicHours.Text);
+                int honorariumHours = int.Parse(txtHonorariumHours.Text);
+                int otherHours = int.Parse(txtOtherHours.Text);
 
                 // Get computed income and deduction values
                 double basicIncome = double.Parse(txtBasicIncomeCutoff.Text);
